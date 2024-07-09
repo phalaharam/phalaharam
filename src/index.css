@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  user-select: none;
+}
+
+/* styles.css or tailwind.css */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #F28123 #f0f0f0;
+}
+
+/* For Webkit browsers */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Background color */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #F28123; /* Scrollbar color */
+  border-radius: 20px; /* Roundness of the scrollbar */
+  border: 3px solid #f0f0f0; /* Padding around scrollbar */
+}
