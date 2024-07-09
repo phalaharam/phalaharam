@@ -73,7 +73,7 @@ function App() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 z-50 w-full bg-lightSecondary dark:bg-darkLightSecondary shadow-md">
+      <header className="fixed top-0 left-0 z-50 w-full shadow-md bg-orange-50 dark:bg-darkLightSecondary">
         <nav className="container flex items-center justify-between h-16 px-5 mx-auto">
           <a
             href="#home"
@@ -87,12 +87,12 @@ function App() {
                 <li key={link.name} className="flex flex-col items-center">
                   <button
                     className={`flex flex-col items-center ${
-                      active === link.name ? "text-primary dark:text-darkPrimary" : "text-black"
+                      active === link.name ? "text-primary dark:text-darkPrimary" : "text-primaryText"
                     }`}
                     onClick={() => handleScrollToSection(link.target)}
                   >
-                    <link.icon className="text-xl md:hidden" />
-                    <span className={`hidden font-bold text-md md:block ${active === link.name ? "text-primary dark:text-darkPrimary" : "text-black"} `}>{link.name}</span>
+                    <link.icon className="text-xl md:hidden hover:text-primary" />
+                    <span className={`hidden font-bold text-md md:block hover:text-primary ${active === link.name ? "text-primary dark:text-darkPrimary" : "text-primaryText"} `}>{link.name}</span>
                   </button>
                 </li>
               ))}
@@ -133,7 +133,7 @@ function App() {
         </div>
         
         <Services />
-        <Menu />
+        {/* <Menu /> */}
         <Testimonials />
         <div id="contact" ref={contactRef}>
           <ContactUs />

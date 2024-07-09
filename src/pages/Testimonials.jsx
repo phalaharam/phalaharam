@@ -118,7 +118,7 @@ const Testimonials = () => {
                     />
                     <div className="text-left">
                       <h4 className="text-lg font-bold">{testimonial.title}</h4>
-                      <p className="text-sm text-primary dark:text-darkPrimaryText">
+                      <p className="text-sm text-primaryText dark:text-PrimaryText">
                         {testimonial.text}
                       </p>
                       <p className="text-sm text-secondaryText">

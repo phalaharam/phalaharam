@@ -54,23 +54,23 @@ const FAQ = () => {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="px-4 pt-2 pb-0 mb-4 bg-lightSecondary dark:bg-darkLightSecondary rounded-lg shadow"
+            className="px-4 pt-2 pb-0 mb-4 rounded-lg shadow bg-lightSecondary dark:bg-darkLightSecondary"
           >
             <button
               className="flex items-center justify-between w-full text-lg font-semibold text-left bg-lightSecondary dark:bg-darkLightSecondary accordion-header focus:outline-none"
               onClick={() => toggleAccordion(index)}
             >
-              <span className={`${activeIndex === index ? 'text-primary dark:text-darkPrimary' : 'text-primary dark:text-darkPrimaryText'}`}>{faq.question}</span>
+              <span className={`${activeIndex === index ? 'text-primary dark:text-darkPrimary' : ' dark:text-PrimaryText'}`}>{faq.question}</span>
               <motion.div
                 animate={{ rotate: activeIndex === index ? 180 : 0 }}
                 transition={{ duration: 0.3 }}
-                className={`${activeIndex === index ? 'text-primary dark:text-darkPrimary' : 'text-primary dark:text-darkPrimaryText'}`}
+                className={`${activeIndex === index ? 'text-primary dark:text-darkPrimary' : ' dark:text-PrimaryText'}`}
               >
                 {activeIndex === index ? <IoChevronUpOutline /> : <IoChevronDownOutline />}
               </motion.div>
             </button>
             <motion.div
-              className="mt-2 overflow-hidden text-primary dark:text-darkPrimaryText accordion-content"
+              className="mt-2 overflow-hidden text-primaryText dark:text-darkPrimaryText accordion-content"
               initial={false}
               animate={{ height: activeIndex === index ? 'auto' : 0 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}

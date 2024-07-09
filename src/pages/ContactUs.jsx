@@ -33,7 +33,7 @@ const ContactUs = () => {
           </div>
           <div className="flex items-center">
             <FaMapMarkerAlt className="mr-4 text-primary dark:text-darkPrimary" />
-            <span><p className="text-primary dark:text-darkPrimaryText">
+            <span><p className="text-primaryText dark:text-PrimaryText">
                 Marathahalli, <br />
                 Bangalore, 560037
                 <br />

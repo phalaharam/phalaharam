@@ -14,6 +14,18 @@ const points = [
   "Join our community and share your fruit experiences and recipes.",
 ];
 
+const handleScrollToSection = (target) => {
+  const element = document.getElementById(target);
+  const headerOffset = 60; // Adjust based on your header height
+  const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+  const offsetPosition = elementPosition - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
+
+};
 
 const AboutUs = () => {
 
@@ -38,7 +50,7 @@ const AboutUs = () => {
         exit={{ opacity: 0 }}
       >
         <h2 className="mb-4 text-4xl font-bold text-primary dark:text-darkPrimary">About Phalaharam</h2>
-        <h3 className="mb-4 text-3xl font-bold text-primary dark:text-darkPrimaryText">100% Fresh & Hygienic Fruit Bowl</h3>
+        <h3 className="mb-4 text-3xl font-bold text-primaryText dark:text-darkPrimaryText">100% Fresh & Hygienic Fruit Bowl</h3>
         <ul className="mb-8 space-y-4 text-secondaryText">
           {points.map((point, index) => (
             <li key={index} className="flex items-center">
@@ -49,6 +61,7 @@ const AboutUs = () => {
         <motion.button
           whileHover={{ scale: 1.1 }}
           className="px-6 py-3 text-white rounded-full shadow-lg bg-primary"
+          onClick={() => handleScrollToSection('subscription')}
         >
           Order
         </motion.button>

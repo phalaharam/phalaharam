@@ -46,7 +46,7 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className="px-4 text-primary bg-lightBg dark:bg-darkLightBg md:px-8 lg:px-16"
+      className="px-4 text-primaryText bg-lightBg dark:bg-darkLightBg md:px-8 lg:px-16"
     >
       <div className="py-12 footer-top">
         <div className="container mx-auto">
@@ -74,7 +74,7 @@ const Footer = () => {
                   <li key={index} className="mb-2">
                     <FaAngleRight className="inline mr-2 text-primary dark:text-darkPrimary" />
                     <button
-                      className="text-primary hover:text-primary dark:text-darkPrimary"
+                      className="text-primaryText hover:text-primaryText dark:text-darkPrimary"
                       onClick={() => handleScrollToSection(link.target)}
                     >
                       {link.name}
@@ -93,7 +93,7 @@ const Footer = () => {
                   <li key={index} className="mb-2">
                     <FaAngleRight className="inline mr-2 text-primary dark:text-darkPrimary" />
                     <button
-                      className="text-primary hover:text-primary dark:text-darkPrimary"
+                      className="text-primaryText hover:text-primaryText dark:text-darkPrimary"
                       onClick={() => handleScrollToSection(link.target)}
                     >
                       {link.name}
@@ -107,7 +107,7 @@ const Footer = () => {
               <h4 className="mb-4 text-xl font-semibold text-primary dark:text-darkPrimary">
                 Contact Us
               </h4>
-              <p className="text-primary">
+              <p className="text-primaryText">
                 Marathahalli, <br />
                 Bangalore, 560037
                 <br />
@@ -123,31 +123,31 @@ const Footer = () => {
               <div className="flex mt-4 space-x-4 social-links">
                 <a
                   href="#"
-                  className="text-xl text-primary hover:text-primary dark:text-darkPrimary"
+                  className="text-xl text-primaryTextText hover:text-primary dark:text-darkPrimary"
                 >
                   <FaTwitter />
                 </a>
                 <a
                   href="#"
-                  className="text-xl text-primary hover:text-primary dark:text-darkPrimary"
+                  className="text-xl text-primaryTextText hover:text-primary dark:text-darkPrimary"
                 >
                   <FaFacebook />
                 </a>
                 <a
                   href="#"
-                  className="text-xl text-primary hover:text-primary dark:text-darkPrimary"
+                  className="text-xl text-primaryTextText hover:text-primary dark:text-darkPrimary"
                 >
                   <FaInstagram />
                 </a>
                 <a
                   href="#"
-                  className="text-xl text-primary hover:text-primary dark:text-darkPrimary"
+                  className="text-xl text-primaryTextText hover:text-primary dark:text-darkPrimary"
                 >
                   <FaYoutube />
                 </a>
                 <a
                   href="#"
-                  className="text-xl text-primary hover:text-primary dark:text-darkPrimary"
+                  className="text-xl text-primaryTextText hover:text-primary dark:text-darkPrimary"
                 >
                   <FaLinkedin />
                 </a>
@@ -161,12 +161,12 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-center space-y-4 md:space-y-0">
           <div className="copyright">
             &copy; Copyright{" "}
-            <strong className="text-primary dark:text-darkPrimary">Phalaharam</strong>. All Rights
+            <strong className="text-primaryTextText dark:text-darkPrimary">Phalaharam</strong>. All Rights
             Reserved
           </div>
           <div className="credits">
             Designed by{" "}
-            <a href="#intro" className="text-primary dark:text-darkPrimary">
+            <a href="#intro" className="text-primaryTextText dark:text-darkPrimary">
               Phalaharam
             </a>
           </div>
